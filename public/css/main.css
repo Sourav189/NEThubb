@@ -17,7 +17,7 @@ body {
 }
 @media (prefers-color-scheme: dark) {
     html, body {
-        background: #111;
+        /* background: #111; */
         color: white;
     }
 }
@@ -73,10 +73,22 @@ body.success>#successoverlay>.title {
 }
 
 .text-center {
-    text-align: center;
+    text-align: left;
+    left: 0;
+    
+}
+.heading{
+    text-align: left;
+    display: inline-block;
+
+}
+.icon{
+    background-image: url('/icons/sharedrop-icon.png');
 }
 
 .row {
+    margin-top: 30px;
+    margin-bottom: 20px;
     width: 100%;
     text-align: center;
 }
@@ -88,7 +100,7 @@ body.success>#successoverlay>.title {
 }
 
 
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: light) {
     #theQRCode {
         filter: invert(1);
     }
@@ -132,12 +144,13 @@ body.success>#successoverlay>.title {
 }
 
 h1 {
+    left: 0;
     font-size: 36px;
     font-family: inherit;
     font-weight: 500;
     line-height: 1.1;
     color: #333;
-    margin: 20px 0.67em 10px;
+    margin: 0.1px 0.67em 10px;
 }
 @media (prefers-color-scheme: dark) {
     h1 {
@@ -220,7 +233,7 @@ a:focus {
 
 #fileToUploadButton .button-text {
     font-size: 12px;
-    line-height: 22px;
+    line-height: 22px;   
 }
 
 #fileToUpload {
@@ -288,3 +301,82 @@ a:focus {
     margin-left: -1.5rem;
     z-index: 2;
 }
+/* 
+.close-modal {
+    position: absolute;
+    top: 1.2rem;
+    right: 2rem;
+    font-size: 5rem;
+    color: #333;
+    cursor: pointer;
+    border: none;
+    background: none;
+  }
+  .modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+  
+    background-color: white;
+    padding: 6rem;
+    border-radius: 5px;
+    box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+    z-index: 10;
+  }
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(3px);
+    z-index: 5;
+  }
+
+  .hidden {
+    display: none;
+  } */
+
+  /* body {font-family: Arial, Helvetica, sans-serif;} */
+
+  /* The Modal (background) */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    background-color: darkgray;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 40%;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: black;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
