@@ -1,4 +1,4 @@
-# Node.js-LAN-File-Sharing ![version: beta](https://img.shields.io/badge/version-beta-orange)
+<!-- # Node.js-LAN-File-Sharing ![version: beta](https://img.shields.io/badge/version-beta-orange)
 A small Node.js app designed for sharing files while on the same network. Especially useful when you are trying to get a file from a friend and their device has a single broken USB port.
 
 ## Features
@@ -27,4 +27,4 @@ Your LAN IP is shown on the page in addition to console output. Files in "files"
 
 ![Imgur](http://i.imgur.com/U4IFJsj.png)
 
-Drag and Drop file upload. Archived without any javascript library.
+Drag and Drop file upload. Archived without any javascript library. -->
